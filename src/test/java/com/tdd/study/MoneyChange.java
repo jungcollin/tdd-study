@@ -10,11 +10,10 @@ public class MoneyChange {
 
     @Test
     public void 달러변환테스트() {
-
         Dollar five = new Dollar(5);
-        five.times(2);
-        Assert.assertEquals(11, five.amount);
+        Dollar product = five.times(2);
+        Assert.assertEquals(10, product.amount);
+        product = five.times(3);
+        Assert.assertEquals(15, product.amount);
     }
-
-
 }
